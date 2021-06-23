@@ -1,0 +1,51 @@
+{
+    "name": "Prabha Movies Bot",
+    "description": "Prabha Movies Bot",
+    "logo": "https://telegra.ph/file/40a90e15a6afe9f26b220.jpg",
+    "keywords": [
+        "Auto",
+        "Filter",
+        "Mongo DB"
+    ],
+    "website": "https://github.com/refreshprabha/",
+    "repository": "https://github.com/refreshprabha/CineCube",
+    "success_url": "https://telegram.dog/TamilRasanai",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+        },
+        "FORCESUB_CHANNEL": {
+            "description": "For Force Subscribe.(bot should be admin in this fsub channel) Paste your forcesubscribe channel USERNAME (without @)..",
+            "value": "CineGalaxy",
+            "required": false
+        },
+        "DB_URI": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": ""
+        },
+        "USER_SESSION": {
+            "description": "A Pyrogram User Session String. Generated From @PyrogramStringBot",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
